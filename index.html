@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utc-8">
+        <title> Ejercicios de validación </title>
+    </head>
+
+    <body>
+        <h1>
+            Primer ejercicio
+        </h1>
+        
+        <script type="text/javascript"> 
+
+            let pesosPorDia = parseFloat(prompt("¿Cuánto ganas por día?"));
+            let cantidadPorAhorrar = parseFloat(prompt("¿Cuánto tienes que ahorrar?"));
+            let cantidadDeDias = parseInt(prompt("¿Cuántos días tienes para ahorrar?"));
+
+            let esPosible = ((pesosPorDia * cantidadDeDias) >= cantidadPorAhorrar);
+
+            if (esPosible){
+                alert("Ya la armaste");
+            } else {
+                alert("Sigue participando");
+            };
+
+            let edad = 20;
+
+            if (edad >= 18){
+                alert("Ve a perderte en el alcohol")
+            } else if (edad < 18 && edad > 5){
+                alert("Puedes quedarte en casa a jugar sanamente")
+            } else {
+                alert("Tienes que dormir")
+            }
+        </script>
+    </body>
+
+</html>
