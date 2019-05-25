@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utc-8">
+        <title> Ejercicios de validación </title>
+    </head>
+
+    <body>
+        <h1>
+            Ejercicio 2
+        </h1>
+        
+        <script type="text/javascript"> 
+        /*
+        2.- Soy en personaje en un videojuego, y dependiendo del nivel tengo cierto título: 
+        Cuando empiezo soy “Aprendiz” si llego al nivel 10 evoluciono a “Acróbata” y si paso del nivel 20 
+        me hago un “ninja” ¿Que soy actualmente?
+        */
+            let nivel = parseInt(prompt("¿Cuá es tu nivel, joven gamer?"))
+
+            if (nivel > 0 && nivel < 10){
+                alert("Eres un aprendiz, joven gamer")
+            } else if (nivel >= 10 && nivel < 20){
+                alert("Ya eres un acróbata D: ")
+            } else if (nivel >= 20 ){
+                alert("Eres todo un ninja")
+            } else {
+                alert("Por fa, inserta un número válido")
+            }
+                
+        </script>
+    </body>
+
+</html>
