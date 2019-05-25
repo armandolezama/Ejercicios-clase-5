@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utc-8">
+        <title> Ejercicios de validación </title>
+    </head>
+
+    <body>
+        <h1>
+            Ejercicio 3
+        </h1>
+        
+        <script type="text/javascript"> 
+        /*
+        3.- Vivo con varios roomies y siempre me roban la comida, entonces le puse una contraseña al refrigerador. Tienes que hacer un programa que valide si mi nombre es el correcto y si mi contraseña también.
+        */
+            let usuario = prompt("Bienvenido a RefriInteligente 2.0. Dime cuál es tu nombre")
+            let contraseña = prompt("Para que ya no te roben más, ingresa una contraseña. Recuerda que soy sensible a las mayúsculas, así que recuerda bien tu contraseña")
+            let nuevoUsuario = prompt("Estás intentando acceder al RefriInteligente 2.0, por favor, autentica tu usuario")
+
+            if (usuario == nuevoUsuario){
+                let nuevaContraseña = prompt("Ahora escribe tu contraseña")
+                if (nuevaContraseña == contraseña){
+                    alert(`Bienvenido, ${usuario}, mantuve a salvo tu comida`)
+                } else {
+                    alert("Contraseña incorrecta, refresa la página para ingresar de nuevo")
+                }
+            } else {
+                alert("Usuario incorrecto, refresa la página para ingresar de nuevo")
+            }
+
+            
+
+        </script>
+    </body>
+
+</html>
